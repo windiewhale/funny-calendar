@@ -1,8 +1,6 @@
 function loadEvent() {
     let rootElement = document.getElementById("root");
 
-
-
     const year = [ {
             name: "January",
             id: "jan",
@@ -76,10 +74,8 @@ function loadEvent() {
         `;
     }
         
-    //tried to insert all to rootElement, but got [object HTMLDivElement] at the beginning, therefore create an other section to contain months.
     let sectionElements = function(yearArray) {
         
-        let mainContainer = `<div>`
         for (const monthList of yearArray) {
            
             let monthContainer = `<section id=${monthList.name}>`;
