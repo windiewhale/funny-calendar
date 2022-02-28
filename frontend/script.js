@@ -61,12 +61,10 @@ const year = [ {
     }
 ];
 
-
 function loadEvent() {
     let rootElement = document.getElementById("root");
     
     (function listDays() {
-        
         for (const monthList of year) {
 
             let monthContainer = ""
@@ -75,9 +73,9 @@ function loadEvent() {
             for (i = 1; i <= monthList.days; i++) {
                 dayCount += `
                 <div>
-                    <time datetime="YYYY">2022</time>
-                    <time datetime="MM">${monthList.name}</time>
-                    <time datetime="DD">${i}</time>
+                    <time datetime="YYYY" class="year">2022</time>
+                    <time datetime="MM" class="mon">${monthList.name}</time>
+                    <time datetime="DD" class="day">${i}</time>
                 </div>
                 `;
             }
