@@ -33,7 +33,7 @@ border-radius: 0;
 
 /*---------------------------------------end of css reset----------------------------------------------*/
 
-.month {
+.month, .cContainer {
     width: 100vw;
     height: 100vh;
 }
@@ -54,21 +54,28 @@ border-radius: 0;
     font-weight: 800;
 }
 
-#jan, #feb, #mar, #apr, #may, #jun {
+#jan section, #feb section, #mar section, #apr section, #may section, #jun section {
     display: grid;
     grid-template-columns: repeat(7, 100px [col-start]);
     grid-template-rows: repeat(4, auto); 
 }
-
+ 
 #jan {
     background: radial-gradient(ellipse at top left, #56c63f,#106c81,#58f3af, #106c81), radial-gradient(ellipse at bottom, #58f3af, transparent);
+}
+
+#jan section {
+    display: grid;
+    grid-template-columns: repeat(7, 100px [col-start]);
+    grid-template-rows: repeat(4, auto); 
+   
     align-items: center;
     justify-content: center;
     align-content: center;
     grid-gap: 10px;
 }
 
-#jan div {
+#jan section div {
     background-color: rgba(255, 255, 255, 0.219) ;
     width: 100px;
     height: 100px;
@@ -84,16 +91,19 @@ border-radius: 0;
     justify-content: center;
 }
 
-#feb {
-   
+#feb { 
     background: radial-gradient(circle at right, #d9b5bb, #c18e96,#c48944, #012356);
+}
+
+#feb section {
+   
     grid-template-columns: repeat(7, 200px [col-start]);
     grid-template-rows: repeat(4, auto); 
     align-items: center;
     align-content: space-evenly;
     justify-content: center;
 }
-#feb div {
+#feb section div {
     background-color: rgba(71, 142, 201, 0.267) ;
     background: radial-gradient(rgba(71, 142, 201, 0.452),transparent 70%  );
     width: 200px;
@@ -106,7 +116,12 @@ border-radius: 0;
     align-items: center;
     justify-content: center;
 }
+
 #mar {
+    background: radial-gradient(ellipse at top right, #c78190,#106c81, #81c6b8), radial-gradient(ellipse at bottom, #c78190,#106c81, #81c6b8);
+}
+
+#mar section {
     grid-template-columns: repeat(7, 130px [col-start]);
     grid-template-rows: repeat(4, 150px);
     justify-items: end;
@@ -114,10 +129,9 @@ border-radius: 0;
     justify-content: start;
     align-content: end;
     grid-gap: 5px;
-    background: radial-gradient(ellipse at top right, #c78190,#106c81, #81c6b8), radial-gradient(ellipse at bottom, #c78190,#106c81, #81c6b8);
 }
 
-#mar div {
+#mar section div {
     width: 80px;
     height: 150px;
     padding: 0;
@@ -136,8 +150,12 @@ border-radius: 0;
     align-items: flex-end;
     justify-content: flex-start;
 }
+
 #apr {
     background: linear-gradient( #50bcda,#ecd585,#e98e75, #d18a9a, #a16072);
+}
+
+#apr section {
     grid-template-columns: repeat(7, 160px [col-start]);
     grid-template-rows: repeat(4, auto); 
     justify-items: center;
@@ -145,7 +163,8 @@ border-radius: 0;
     align-content: space-evenly;
     justify-content: center;
 }
-#apr div {
+
+#apr section div {
     background-color: rgba(255, 255, 255, 0.151) ;
     width: 120px;
     height: 150px;
@@ -160,16 +179,19 @@ border-radius: 0;
     justify-content: center;
 }
 #may {
+    background: radial-gradient(ellipse at bottom , #e3aa9f,#e7a96a, #dbbc5d); 
+}
+
+#may section {
     grid-template-columns: repeat(7, 130px [col-start]);
     grid-row-gap: 20px;
     grid-column-gap: 20px;
     align-items: center;
     align-content: center;
     justify-content: center;
-    
-    background: radial-gradient(ellipse at bottom , #e3aa9f,#e7a96a, #dbbc5d); 
 }
-#may div {
+
+#may section div {
     background-color: #55bd9b;
     width: 130px;
     height: 150px;
@@ -185,14 +207,17 @@ border-radius: 0;
 }
 #jun {
     background: linear-gradient( #581845, #900c3f, #c70039);
-    
+}
+
+#jun section {
     grid-template-rows: repeat(5, 120px);
     align-items: start;
     align-content: end;
     justify-content: center;
     grid-column-gap: 20px;
 }
-#jun div {
+
+#jun section div {
     background: radial-gradient( #ffc30f, transparent );
     width: 110px;
     height: 110px;
@@ -205,3 +230,43 @@ border-radius: 0;
     align-items: center;
     justify-content: center;
 }
+
+#jul section, #aug section, #sep section, #nov section{
+    display: flex;
+}
+
+#jul {
+    background: radial-gradient(ellipse at top right, #f9d66b, #fe737c, #fa947c, #fe737c, #f9d66b);
+}
+
+#jul section{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 700px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+}
+
+#jul section div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(#cbe453, #6cc15a);
+    color: #fef7db;
+
+    width: 100px;
+    height: 100px
+}
+
+#jul section div:nth-last-child(-n+3) {
+    align-self: self-start;
+}
+
+

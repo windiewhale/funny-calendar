@@ -1,62 +1,62 @@
 const year = [ {
         name: "January",
         id: "jan",
-        mth: "01",
+        nth: "01",
         days: 31,
     }, {
         name: "February",
         id: "feb",
-        mth: "02",
+        nth: "02",
         days: 28
     }, {
         name: "March",
         id: "mar",
-        mth: "03",
+        nth: "03",
         days: 31
     }, {
         name: "April",
         id: "apr",
-        mth: "04",
+        nth: "04",
         days: 30
     }, {
         name: "May",
         id: "may",
-        mth: "05",
+        nth: "05",
         days: 31
     }, {
         name: "June",
         id: "jun",
-        mth: "06",
+        nth: "06",
         days: 30
     }, {
         name: "July",
         id: "jul",
-        mth: "07",
+        nth: "07",
         days: 31
     }, {
         name: "August", 
         id: "aug",
-        mth: "08",
+        nth: "08",
         days: 31
     }, {
         name: "September",
         id: "sep",
-        mth: "09",
+        nth: "09",
         days: 30
     }, {
         name: "October",
         id: "oct",
-        mth: "10",
+        nth: "10",
         days: 31
     }, {
         name: "November",
         id: "nov",
-        mth: "11",
+        nth: "11",
         days: 30
     }, {
         name: "December",
         id: "dec",
-        mth: "12",
+        nth: "12",
         days: 31
     }
 ];
@@ -76,11 +76,14 @@ function loadEvent() {
                     <time datetime="YYYY" class="year">2022</time>
                     <time datetime="MM" class="mon">${monthList.name}</time>
                     <time datetime="DD" class="day">${i}</time>
-                </div>
-                `;
+                </div>`;
             }
     
-            monthContainer += `<section id=${monthList.id} class="month">${dayCount}</section>`;
+            monthContainer += `<section id=${monthList.id} class="month">
+                                    <section class="cContainer">
+                                    ${dayCount}
+                                    </section>
+                                </section>`;
             rootElement.insertAdjacentHTML("beforeend", monthContainer)
         } 
     }) ();

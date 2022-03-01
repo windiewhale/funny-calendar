@@ -15,4 +15,16 @@ apr https://www.facebook.com/bundlesgo/photos/mountains-and-sunrise-horizon-colo
 
 may https://www.color-hex.com/color-palette/37559
 
-june https://htmlcolorcodes.com/resources/best-color-palette-generators/
+jun https://htmlcolorcodes.com/resources/best-color-palette-generators/
+
+jul https://www.schemecolor.com/warm-summer.php
+
+aug
+
+sept
+
+oct
+
+nov
+
+dec
