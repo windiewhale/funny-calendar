@@ -33,7 +33,7 @@ border-radius: 0;
 
 /*---------------------------------------end of css reset----------------------------------------------*/
 
-.month, .cContainer {
+ #root, .month, .cContainer {
     width: 100vw;
     height: 100vh;
 }
@@ -106,8 +106,8 @@ border-radius: 0;
 #feb section div {
     background-color: rgba(71, 142, 201, 0.267) ;
     background: radial-gradient(rgba(71, 142, 201, 0.452),transparent 70%  );
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     padding: 0;
     border-radius: 50%;
     color:#010920;
@@ -265,8 +265,8 @@ border-radius: 0;
     height: 100px
 }
 
-#jul section div:nth-last-child(-n+3) {
-    align-self: self-start;
-}
+/* #jul section div:nth-last-child(-n+3) {
+    align-self: flex-start;
+} */
 
 
