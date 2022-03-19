@@ -19,7 +19,7 @@ jun https://htmlcolorcodes.com/resources/best-color-palette-generators/
 
 jul https://www.schemecolor.com/warm-summer.php
 
-aug
+aug https://www.colourpod.com/post/177212699776/thats-a-puzzle-submitted-by-zedetta
 
 sept
 

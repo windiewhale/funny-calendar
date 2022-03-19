@@ -31,7 +31,7 @@ appearance: none !important;
 border-radius: 0;
 }
 
-/*---------------------------------------end of css reset----------------------------------------------*/
+/*----------------------------------end of css reset-----------------------------------------*/
 
  #root, .month, .cContainer {
     width: 100vw;
@@ -54,6 +54,8 @@ border-radius: 0;
     font-weight: 800;
 }
 
+/* ---grid months--- */
+
 #jan section, #feb section, #mar section, #apr section, #may section, #jun section {
     display: grid;
     grid-template-columns: repeat(7, 100px [col-start]);
@@ -61,7 +63,8 @@ border-radius: 0;
 }
  
 #jan {
-    background: radial-gradient(ellipse at top left, #56c63f,#106c81,#58f3af, #106c81), radial-gradient(ellipse at bottom, #58f3af, transparent);
+    background-image: radial-gradient(ellipse at top left, #56c63f,#106c81), 
+                      radial-gradient(ellipse at bottom, #2e58e2, transparent);
 }
 
 #jan section {
@@ -231,6 +234,8 @@ border-radius: 0;
     justify-content: center;
 }
 
+/* ---flex months--- */
+
 #jul section, #aug section, #sep section, #nov section{
     display: flex;
 }
@@ -269,4 +274,64 @@ border-radius: 0;
     align-self: flex-start;
 } */
 
+#aug {
+    background: linear-gradient(-90deg, #6d5f90, #ad87ae, #d892af, #fd9f9a, #ffd790);
+}
+
+#aug section{
+    position: absolute;
+    left: 75%;
+    transform: translateX(-50%);
+
+    width: 840px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    
+
+}
+
+#aug section div {
+    background-color: rgba(255, 255, 255, 0.151) ;
+    width: 120px;
+    height: 150px;
+    padding: 0;
+    border: solid 1px rgba(255, 255, 255, 0.493);
+    color:white;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#sep {
+    background: radial-gradient(circle at top right, #65312e, #d95232, #f29541, #c2aa3e, #555432, #1a3536);
+}
+
+#sep section{
+
+    width: 1000px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-content: flex-end;
+    align-content: center;
+    gap: 10px;
+}
+
+#sep section div {
+    background-color: rgba(255, 255, 255, 0.103) ;
+    width: 120px;
+    height: 150px;
+    padding: 0;
+    color: #e3db9a;
+    border: 1px solid #e3db9a;
+    box-shadow: 5px 5px #e3db9a;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
