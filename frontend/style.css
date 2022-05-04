@@ -33,25 +33,42 @@ border-radius: 0;
 
 /*----------------------------------end of css reset-----------------------------------------*/
 
+@font-face {
+    font-family: 'Neue Machina';
+    font-style: normal;
+    font-weight: normal;
+    src: url('./NeueMachina-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Kaspersky';
+    font-style: normal;
+    font-weight: normal;
+    src: url('./Kaspersky-Regular.ttf') format('truetype');
+}
+
  #root, .month, .cContainer {
     width: 100vw;
     height: 100vh;
 }
 
 .year {
-    font-family: 'Martel Sans', sans-serif;
+    /* font-family: 'Martel Sans', sans-serif; */
+    font-family: 'Kaspersky';
     font-size: 16px;
 }
 
 .mon {
-    font-family: 'Darker Grotesque', sans-serif;
+    font-family: 'Neue Machina';
     font-size: 20px;
+   
 }
 
 .day {
     font-size: 28px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 800;
+    /* font-family: 'Inter', sans-serif; */
+    font-family: 'Neue Machina';
+    /* font-weight: 800; */
 }
 
 /* ---grid months--- */
@@ -81,7 +98,7 @@ border-radius: 0;
 #jan section div {
     background-color: rgba(255, 255, 255, 0.219) ;
     width: 100px;
-    height: 100px;
+    height: 130px;
     padding: 0;
     border:1px solid #0b4370;
     border-radius: 10px;
@@ -92,6 +109,7 @@ border-radius: 0;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 10px
 }
 
 #feb { 
